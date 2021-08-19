@@ -1,0 +1,185 @@
+@font-face {
+    font-family: 'moviegallery';
+    src: url(/fonts/moviegallery.ttf);
+}
+@font-face {
+    font-family: 'Fifties_Movies';
+    src: url(/fonts/Fifties_Movies.ttf);
+}
+@font-face {
+    font-family: 'TransformersMovie';
+    src: url(/fonts/TransformersMovie.ttf);
+}
+/* Valores recomendados de inicialización */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    color: white;
+}
+.mhead {
+    display: flex;
+    height: 10vh;
+    padding: 1rem 0;
+    background-image: url(/img/fondo_cel.png);
+    align-items: center;
+    justify-content: space-evenly;
+}
+.mhead img {
+    padding: 0.5rem;
+    width: 4rem;
+    height: 4rem;
+}
+.mhead h1{
+    font-family: 'TransformersMovie';
+    text-align: center;
+}
+.maincontent {
+    font-family: 'TransformersMovie';
+    letter-spacing: 0.1rem;
+    height: 85vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    background-image: url(/img/copcorn.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.maincontent h2{
+    padding: 2rem 0;
+    text-align: center;
+}
+.content_Main {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 0.5rem;
+    height: 70vh;
+    width: 80vw;
+}
+.main_form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.main_form_contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    font-size: 1.4rem;
+}
+.main_form_contents p {
+    padding-bottom: 1rem;
+}
+.main_form_contents label {
+    padding: 1rem;
+}
+.inputMovie {
+    font-size: 2rem;
+    text-align: center;
+    width: 25%;
+}
+.inputMovie {
+    background-color: rgba(0, 0, 0,0);
+    padding: 1rem;
+    border: 0;
+    /* border-bottom: .3rem solid rgb(76, 72, 112); */
+    color: white;
+}
+.border {
+    display:inline-block;
+    width:5%;
+    box-shadow: 1px 1px 10px blue;
+    -webkit-transition: all ease-in-out .25s;
+    -o-transition: all ease-in-out .25s;
+    transition: all ease-in-out .25s;
+}
+
+.inputMovie:hover,
+.inputMovie:active, 
+.inputMovie:focus{
+    outline: none;
+}
+
+.inputMovie:hover+.border {
+    width:15%;
+}
+
+
+#moviesText {
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'moviegallery';
+    /* display: none; */
+}
+.division {
+    width: 80%;
+    margin: auto;
+    box-shadow: 1px 1px 10px blue;
+}
+.main_servicios {
+    background-color: rgba(26, 84, 161, 0.473);
+    border-radius: 1rem 0rem 1rem 0rem;
+    padding: .5rem 1rem;
+    margin: 0rem 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.main_servicios p {
+    padding: 1rem;
+    text-align: center;
+}
+.main_servicios_checkbox{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 1rem;
+}
+.fcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    background-color: rgb(44, 44, 44);
+}
+
+.botones {
+    font-family: 'TransformersMovie';
+    background-color: rgba(0, 0, 0, 0);
+    padding:0.55rem 1.2rem;
+    border:0.2rem solid #2167ff;
+    border-radius:0.5rem;
+    text-decoration:none;
+    color:#2167ff;
+    text-align:center;
+    -webkit-transition: all ease-in-out .25s;
+    -o-transition: all ease-in-out .25s;
+    transition: all ease-in-out .25s;
+}
+.botones:hover {
+    color: white;
+    background-color:#2167ff;
+}
+.radioCheck {
+    cursor: pointer;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+#auxiliar {
+    padding: 1rem;
+    text-align: center;
+}
