@@ -23,28 +23,13 @@ function testeoJava() {
     const servicios = sumaStreaming();
     document.getElementById('moviesText').style.display = 'none';
     if (cine > servicios) {
+        const diferencia = cine-servicios;
         const message = document.getElementById('auxiliar');
-        message.innerText = 'Gana los streaming!, bienvenido pagos domicialiados';
-        // console.log('Gana los streaming!, bienvenido pagos domicialiados');
+        message.innerText = `Gana los streaming! ahorras: $${diferencia}, bienvenido pagos domicialiados`;
     }
     else {
+        const diferencia = servicios-cine;
         const message = document.getElementById('auxiliar');
-        message.innerText = 'Gana el cine!, prepara tu traje de astronauta para salir';
-        // console.log('Gana el cine!, prepara tu traje de astronauta para salir');
+        message.innerText = `Gana el cine!, ahorras: $${diferencia}, prepara tu traje de astronauta para salir`;
     }
-    // return servicios + cine;
 }
-
-
-
-// Experimentos 
-/*
-* Valores boletos de cine
-    const costos = [56,48,50];
-    function mediana(costos) {
-    const suma = (total,numero) => total + numero;
-    const acumulado = costos.reduce(suma,0);
-    resultado = acumulado/costos.length;
-    return resultado;
-}
- */

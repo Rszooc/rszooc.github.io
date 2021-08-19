@@ -10,7 +10,11 @@
     font-family: 'TransformersMovie';
     src: url(/fonts/TransformersMovie.ttf);
 }
-/* Valores recomendados de inicialización */
+@font-face {
+    font-family: 'CaviarDreams';
+    src: url(/fonts/CaviarDreams.ttf);
+}
+/* Valores default */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -180,6 +184,8 @@ body {
 }
 
 #auxiliar {
+    font-family: 'CaviarDreams';
+    font-size: 1.7rem;
     padding: 1rem;
     text-align: center;
 }
